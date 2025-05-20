@@ -16,6 +16,12 @@ for pkg in "${REQUIRED[@]}"; do
 done
 
 # ───────────────────────────────────────────────────────────────
+# Make scripts executable
+chmod +x "$HOME/gifetch/scripts/gifetch.sh"
+chmod +x "$HOME/gifetch/scripts/gif2ascii.sh"
+echo "  Made gifetch.sh and gif2ascii.sh executable."
+
+# ───────────────────────────────────────────────────────────────
 # Set up aliases
 if [[ "$(basename "$SHELL")" == "bash" ]]; then
   SHELL_RC="$HOME/.bashrc"
