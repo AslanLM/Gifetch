@@ -24,6 +24,7 @@ Gifetch uses the following tools:
 
 ```bash
 cd ~/gifetch
+chmod +x install.sh
 ./install.sh
 source ~/.zshrc # or source ~/.bashrc depending on your shell
 ```
@@ -47,7 +48,13 @@ sudo pacman -S ffmpeg jp2a neofetch
 
 > On other distros use your respective package manager (e.g. `apt`, `brew`, `dnf`, etc.)
 
-### 2. Add aliases manually (recommended)
+### 2. Make scripts executable
+```bash
+chmod +x ~/gifetch/scripts/gifetch.sh
+chmod +x ~/gifetch/scripts/gif2ascii.sh
+```
+
+### 3. Add aliases manually (recommended)
 
 Edit your `~/.zshrc` or `~/.bashrc`:
 
