@@ -5,8 +5,7 @@ The idea came after watching the PewDiePie video about linux — and I thought t
 
 It's just a fun little project for terminal aesthetics. Hope someone else finds it cool too 🍚
 
-![Preview](./preview.gif)
-
+![Gifetch preview](https://github.com/AslanLM/Gifetch/releases/download/v1.0.0/preview.gif)
 ---
 
 ## 🧩 Dependencies
