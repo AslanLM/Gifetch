@@ -2,7 +2,7 @@
 
 INPUT="$1"
 NAME=$(basename "$INPUT" .gif)
-FRAME_DIR="frames"
+FRAME_DIR="$HOME/gifetch/frames"
 ASCII_DIR="$FRAME_DIR/ascii_frames"
 
 # ───────────────────────────────────────────────────────────────
@@ -28,7 +28,7 @@ for f in "$FRAME_DIR"/frame_*.png; do
   jp2a --width=40 "$f" >"$ASCII_DIR/$(basename "${f%.png}.txt")"
 done
 
-cp frames/ascii_frames/frame_001.txt ~/.config/neofetch/ascii_logo.txt
+cp "$ASCII_DIR/frame_001.txt" "$HOME/.config/neofetch/ascii_logo.txt"
 
 # ───────────────────────────────────────────────────────────────
 echo "  Done. ASCII frames ready in $ASCII_DIR/"
