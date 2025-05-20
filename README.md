@@ -76,7 +76,7 @@ source ~/.zshrc # or .bashrc
 ### 1. Convert a GIF into ASCII frames:
 
 ```bash
-gif2ascii ./gifs/yourgif.gif
+gif2ascii ~/gifetch/gifs/yourgif.gif
 ```
 
 This will:
