@@ -19,13 +19,13 @@ rm -f "$ASCII_DIR"/*.txt
 # ───────────────────────────────────────────────────────────────
 echo "  Extracting frames from $INPUT..."
 mkdir -p "$FRAME_DIR"
-ffmpeg -loglevel error -i "$INPUT" "$FRAME_DIR/frame_%03d.png"
+ffmpeg -loglevel error -i "$INPUT" "$FRAME_DIR/frame_%03d.jpg"
 
 # ───────────────────────────────────────────────────────────────
 echo "  Converting frames to ASCII..."
 mkdir -p "$ASCII_DIR"
-for f in "$FRAME_DIR"/frame_*.png; do
-  jp2a --width=40 "$f" >"$ASCII_DIR/$(basename "${f%.png}.txt")"
+for f in "$FRAME_DIR"/frame_*.jpg; do
+  jp2a --width=40 "$f" >"$ASCII_DIR/$(basename "${f%.jpg}.txt")"
 done
 
 cp "$ASCII_DIR/frame_001.txt" "$HOME/.config/neofetch/ascii_logo.txt"
