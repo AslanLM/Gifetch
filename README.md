@@ -103,7 +103,7 @@ Press **any key** to stop the animation.
 ```
 gifetch/
 ├── gifs/                 # Your original gifs go here
-├── frames/               # Generated PNG frames
+├── frames/               # Generated JPG frames
 │   └── ascii_frames/     # Generated ASCII text frames
 ├── scripts/              # gif2ascii.sh, gifetch.sh, utils.sh
 ├── install.sh            # Setup script
